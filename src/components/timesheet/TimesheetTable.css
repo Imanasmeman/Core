@@ -1,0 +1,288 @@
+.table-container {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheet-table thead {
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.timesheet-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  white-space: nowrap;
+}
+
+.timesheet-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.timesheet-table th.sortable:hover {
+  background: #f0f0f0;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.th-content svg {
+  color: #999;
+  transition: color 0.2s;
+}
+
+.th-content svg.active {
+  color: #1a1a1a;
+}
+
+.timesheet-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.timesheet-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.timesheet-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.employee-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .timesheet-table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timesheet-table th,
+  .timesheet-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
+.table-container {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheet-table thead {
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.timesheet-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  white-space: nowrap;
+}
+
+.timesheet-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.timesheet-table th.sortable:hover {
+  background: #f0f0f0;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.th-content svg {
+  color: #999;
+  transition: color 0.2s;
+}
+
+.th-content svg.active {
+  color: #1a1a1a;
+}
+
+.timesheet-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.timesheet-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.timesheet-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.employee-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .timesheet-table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timesheet-table th,
+  .timesheet-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
+.table-container {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timesheet-table thead {
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.timesheet-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  white-space: nowrap;
+}
+
+.timesheet-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.timesheet-table th.sortable:hover {
+  background: #f0f0f0;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.th-content svg {
+  color: #999;
+  transition: color 0.2s;
+}
+
+.th-content svg.active {
+  color: #1a1a1a;
+}
+
+.timesheet-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.timesheet-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.timesheet-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.employee-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .timesheet-table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timesheet-table th,
+  .timesheet-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
