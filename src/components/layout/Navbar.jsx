@@ -1,13 +1,28 @@
 import { Clock, FileText, Mail } from 'lucide-react';
 import './Navbar.css';
+import { useEffect, useState } from 'react';
 
 function Navbar({ title, breadcrumb }) {
-  const currentTime = new Date().toLocaleTimeString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false
-  });
+  const [currentTime, setCurrentTime] = useState("");
+
+useEffect(() => {
+  const updateTime = () => {
+    const time = new Date().toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+
+    setCurrentTime(time);
+  };
+
+  updateTime(); // call once immediately
+
+  const interval = setInterval(updateTime, 1000);
+
+  return () => clearInterval(interval); // cleanup
+}, []);
 
   return (
     <div className="navbar">
@@ -17,7 +32,7 @@ function Navbar({ title, breadcrumb }) {
             {breadcrumb.map((item, index) => (
               <span key={index}>
                 {item}
-                {index < breadcrumb.length - 1 && <span className="breadcrumb-separator">›</span>}
+                {index < breadcrumb.length - 1 && <span className="breadcrumb-separator">&rsaquo;</span>}
               </span>
             ))}
           </div>
@@ -29,14 +44,14 @@ function Navbar({ title, breadcrumb }) {
       <div className="navbar-right">
         <span className="navbar-timezone">MST</span>
         <div className="navbar-time">
-          <Clock size={16} />
+          <Clock size={14} />
           <span>{currentTime}</span>
         </div>
         <button className="navbar-icon-btn">
-          <FileText size={20} />
+          <FileText size={16} />
         </button>
         <button className="navbar-icon-btn">
-          <Mail size={20} />
+          <Mail size={16} />
         </button>
         <div className="navbar-avatar">
           <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User" />
@@ -47,3 +62,5 @@ function Navbar({ title, breadcrumb }) {
 }
 
 export default Navbar;
+
+

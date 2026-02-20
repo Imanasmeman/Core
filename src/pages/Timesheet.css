@@ -4,14 +4,16 @@
   flex-direction: column;
   min-width: 0;
   overflow: hidden;
-  background: #f8f8f8;
+  background: transparent;
 }
 
 .timesheet-content {
   flex: 1;
-  padding: 24px 32px;
+  padding: 14px 16px 0;
   min-width: 0;
   overflow-y: auto;
+  border-radius: 14px;
+  background: #f3f3f3;
 }
 
 .timesheet-header {
@@ -37,7 +39,7 @@
 
 @media (max-width: 768px) {
   .timesheet-content {
-    padding: 16px;
+    padding: 10px 10px 0;
   }
 
   .summary-grid {

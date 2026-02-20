@@ -1,15 +1,38 @@
 import './EmployeeCard.css';
+import {
+  Code2,
+  Megaphone,
+  TrendingUp,
+  Palette,
+  Headset,
+  Landmark,
+  Cog,
+  Users
+} from 'lucide-react';
+
+const DEPARTMENT_META = {
+  IT: { icon: Code2 },
+  Marketing: { icon: Megaphone },
+  Sales: { icon: TrendingUp },
+  Design: { icon: Palette },
+  Support: { icon: Headset },
+  Finance: { icon: Landmark },
+  Operations: { icon: Cog },
+  HR: { icon: Users }
+};
 
 function EmployeeCard({ employee }) {
+  const departmentMeta = DEPARTMENT_META[employee.department] || {
+    icon: Users
+  };
+  const DepartmentIcon = departmentMeta.icon;
+
   return (
     <div className="employee-card">
       <div className="employee-card-avatar">
         <img src={employee.avatar} alt={employee.name} />
         <div className="employee-badge">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <rect width="24" height="24" rx="4" fill="white"/>
-            <path d="M8 12h8M12 8v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          </svg>
+          <DepartmentIcon size={16} />
         </div>
       </div>
       <h3 className="employee-name">{employee.name}</h3>

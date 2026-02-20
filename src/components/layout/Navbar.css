@@ -1,14 +1,17 @@
 .navbar {
-  height: auto;
+  min-height: 64px;
   background: var(--background-white);
-  border-bottom: none;
+  border: 1px solid #ececeb;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 24px;
+  padding: 12px 14px;
   position: relative;
   z-index: 100;
-  gap: 24px;
+  gap: 16px;
+  margin-left: 12px;
+  margin-right: 28px;
 }
 
 .navbar-left {
@@ -16,7 +19,7 @@
 }
 
 .navbar-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin: 0;
   color: var(--primary-black);
@@ -25,8 +28,8 @@
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap: 16px;
-  font-size: 18px;
+  gap: 10px;
+  font-size: 14px;
   color: var(--primary-black);
   font-weight: 500;
   font-family: var(--h2-font-family);
@@ -38,24 +41,24 @@
 }
 
 .breadcrumb-separator {
-  margin: 0 4px;
+  margin: 0 6px;
   color: var(--primary-black);
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   margin-left: auto;
 }
 
 .navbar-timezone {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--primary-black);
   background: var(--cover-semi-white);
-  padding: 8px 16px;
+  padding: 5px 10px;
   border-radius: 40px;
   border: 1px solid var(--black-stroke);
 }
@@ -64,14 +67,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--primary-black);
   font-weight: 500;
   font-family: var(--h2-font-family);
 }
 
 .navbar-time svg {
-  display: none;
+  display: block;
+  width: 14px;
+  height: 14px;
 }
 
 .navbar-icon-btn {
@@ -79,14 +84,14 @@
   border: 1px solid var(--black-stroke);
   color: var(--primary-black);
   cursor: pointer;
-  padding: 12px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 50%;
   transition: all 0.2s;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }
 
 .navbar-icon-btn:hover {
@@ -95,8 +100,8 @@
 }
 
 .navbar-avatar {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   overflow: hidden;
   border: none;
