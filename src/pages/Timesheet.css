@@ -1,10 +1,17 @@
 .timesheet-page {
-  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
   background: #f8f8f8;
 }
 
 .timesheet-content {
+  flex: 1;
   padding: 24px 32px;
+  min-width: 0;
+  overflow-y: auto;
 }
 
 .timesheet-header {
