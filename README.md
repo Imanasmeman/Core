@@ -118,7 +118,7 @@ Note: Sidebar includes links for additional paths (`/my-info`, `/project-setup`,
 3. Authentication and authorization are out of scope right now.
 4. Timezone display (`MST`) in navbar is static UI text.
 5. External avatar image links are allowed during development.
-6. Tailwind directives exist in `src/index.css`, but no Tailwind config is currently present in repository; current styling relies on plain CSS files.
+6. Current styling relies on plain CSS files.
 7. Routing intentionally contains only implemented pages; non-implemented sidebar links are placeholders.
 
 ## Build and Deployment
@@ -163,7 +163,4 @@ If deployed under a subpath, update Vite base config in `vite.config.js`.
 - Add unit/integration tests
 - Introduce design tokens and theme strategy
 
-## License
 
-No license file is currently defined in this repository.  
-Add a `LICENSE` file if this project will be distributed.
